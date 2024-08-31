@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <form id="calculator-form">
+                <div class="display">
+                    <input type="text" id="display" readonly value="0">
+                </div>
+                <div class="row">
+                    <input type="button" value="AC" onclick="ac()">
+                    <input type="button" value="DE" onclick="backspace()">
+                    <input type="button" value="√" onclick="squarert()">
+                    <input type="button" value="/" onclick="myclick('/')">
+                </div>
+                <div class="row">
+                    <input type="button" value="7" onclick="myclick('7')">
+                    <input type="button" value="8" onclick="myclick('8')">
+                    <input type="button" value="9" onclick="myclick('9')">
+                    <input type="button" value="*" onclick="myclick('*')">
+                </div>
+                <div class="row">
+                    <input type="button" value="4" onclick="myclick('4')">
+                    <input type="button" value="5" onclick="myclick('5')">
+                    <input type="button" value="6" onclick="myclick('6')">
+                    <input type="button" value="-" onclick="myclick('-')">
+                </div>
+                <div class="row">
+                    <input type="button" value="1" onclick="myclick('1')">
+                    <input type="button" value="2" onclick="myclick('2')">
+                    <input type="button" value="3" onclick="myclick('3')">
+                    <input type="button" value="+" onclick="myclick('+')">
+                </div>
+                <div class="row">
+                    <input type="button" value="00" onclick="myclick('00')">
+                    <input type="button" value="0" onclick="myclick('0')">
+                    <input type="button" value=")" onclick="myclick(')')">
+                    <input type="button" value="=" onclick="eualto()">
+                </div>
+                <div class="row">
+                    <input type="button" value="sin" onclick="fsin()">
+                    <input type="button" value="cos" onclick="fcos()">
+                    <input type="button" value="tan" onclick="ftan()">
+                    <input type="button" value=")" onclick="myclick(')')">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
